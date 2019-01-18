@@ -49,7 +49,7 @@ public class OperacionData {//Creamos clase Operacion Data
         Scanner teclado = new Scanner(System.in);     //Objeto scanner para leer de teclado
         int contPersonalidad = 0;                     //Creamos contador para sumar los participantes
         String cadena = " ";                          //Concatenamos cadena para acumular lo que vamos a presentar
-        System.out.println("Contabilizar participantes catalogados como Adecuador->(1) o por Convocar->(2)");//Leemos una opcion
+        System.out.println("Contabilizar participantes catalogados como Adecuado->(1) o por Convocar->(2)");//Leemos una opcion
         int opc = teclado.nextInt();
         
         if (opc == 1) {//Si es 1 buscamos por Adecuador
@@ -92,7 +92,7 @@ public class OperacionData {//Creamos clase Operacion Data
                 if (informacion.get(i).getDictamenI().equals("NO IDONEO"))//Comparamos con cada posicion si es igual a NO IDONEO
                     contDictamen += 1 ;                                   //Acumulamos las sumas en el contador
             }
-            cadena = String.format("Por CONVOCAR existen: %d\n", contDictamen);//Asignamos a cadena lo que presentaremos
+            cadena = String.format("Por NO IDONEO existen: %d\n", contDictamen);//Asignamos a cadena lo que presentaremos
         } 
         
         return cadena;//retornamos la cadena 
